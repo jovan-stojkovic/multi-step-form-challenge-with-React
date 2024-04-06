@@ -1,9 +1,5 @@
 import "./Styles.scss";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StepOne from "./pages/StepOne";
 import StepTwo from "./pages/StepTwo";
 import StepThree from "./pages/StepThree";
@@ -16,7 +12,7 @@ const App = () => {
       <main>
         <div className="app">
           <div className="side-bar">
-            <Side/>
+            <Side />
           </div>
 
           <div className="content">

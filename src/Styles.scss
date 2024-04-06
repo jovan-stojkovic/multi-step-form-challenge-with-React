@@ -47,16 +47,17 @@ main {
     justify-content: center;
 
     .app {
-        width: 800px;
-        height: 500px;
+        width: 900px;
+        height: 600px;
         background-color: white;
         border-radius: 20px;
-        padding: 20px;
+        padding: 20px 0 20px 20px;
         display: flex;
+   
 
         .side-bar {
           height: 100%;
-          width: 220px;
+          width: 31%;
           background-image: url('src/images/bg-sidebar-desktop.svg');
           background-size: cover;
           background-repeat: no-repeat;
@@ -102,6 +103,125 @@ main {
                 color: white;
                 font-weight: 500;
                 font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .content {
+          width: 69%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .page-container {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+              color: $Marine-blue;
+              font-weight: 700;
+              margin-top: 30px;
+            }
+
+            .h1-desc {
+              color: $Cool-gray;
+              font-size: 14px;
+              margin-top: -38px;
+            }
+
+            .labels {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: -38px;
+
+              .label {
+                color: $Marine-blue;
+                font-size: 14px;
+                font-weight: 700;
+              }
+
+              .error {
+                color: $Strawberry-red;
+                font-size: 14px;
+                font-weight: 700;
+                visibility: hidden;
+
+                &.show-error {
+                  visibility: visible;
+                }
+              }
+            }
+
+            input {
+              all: unset;
+              height: 45px;
+              border-radius: 10px;
+              border: 2px solid $Light-gray;
+              padding-left: 15px;
+              font-weight: 500;
+              color: $Marine-blue;
+              font-size: 17px;
+
+              &::placeholder {
+                font-weight: 500;
+                color: $Cool-gray;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:focus {
+                border: 2px solid $Purplish-blue;
+              }
+
+              &.show-error {
+              border: 2px solid $Strawberry-red;
+
+              }
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            .buttons-cont {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 20px;
+
+              a {
+                all: unset;
+              }
+
+              &.step-one {
+                justify-content: end;
+              }
+
+              .next {
+                all: unset;
+                height: 50px;
+                width: 120px;
+                border-radius: 10px;
+                color: white;
+                background-color: $Marine-blue;
+                text-align: center;
+
+                &:hover {
+                  cursor: pointer;
+                }
+
+                &:active {
+                  filter: opacity(80%);
+                }
               }
             }
           }

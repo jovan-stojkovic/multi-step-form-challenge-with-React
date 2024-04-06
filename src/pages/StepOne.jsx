@@ -20,11 +20,14 @@ const StepOne = () => {
   
 
   return (
-    <div className="page-container">
+    <div className="page-container one">
+      <div className="headline-page-cont">
       <h1>Personal info</h1>
       <p className="h1-desc">
         Please provide yout name, email address, and phone number.
       </p>
+      </div>
+      
       <div className="labels">
         <p className="label">Name</p>
         <p className={`error ${nameError}`}>This field is required</p>
